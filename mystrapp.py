@@ -6,12 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import requests
 import streamlit.components.v1 as components
-import  streamlit.web.cli as stcli
-import sys
 
-if __name__ == '__main__':
-    sys.argv = ["streamlit", "run", "mystrapp.py"]
-    sys.exit(stcli.main())
 st.title('Modèle de scoring')
 st.subheader("Prédiction sur la probabilité de faillite d'un client")
 st.write(("Dashboard interactif à destination des gestionnaires de la relation client permettant d'interpréter les prédictions faites par le modèle"))
